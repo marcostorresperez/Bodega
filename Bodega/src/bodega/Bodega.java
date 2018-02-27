@@ -24,6 +24,7 @@ public class Bodega {
         String colorVar;
         Double hectareas;
         Double kilos;
+        Variedad variedad1=null;
         // DEPOSITO
         int idDeposito;
         Double capacidadDep;
@@ -48,7 +49,8 @@ public class Bodega {
             switch (opcion) {
                 case 1:
                     System.out.println("1.- Dar de alta variedad");
-                    
+                    variedad1=new Variedad("tempranillo","tinto",20,200);
+                    System.out.println(variedad1.getNombre());
                     break;
 
                 case 2:
